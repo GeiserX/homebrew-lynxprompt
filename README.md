@@ -1,4 +1,10 @@
-# Homebrew Tap for LynxPrompt CLI
+<p align="center"><img src="docs/images/banner.svg" alt="homebrew-lynxprompt banner" width="900"/></p>
+
+<h1 align="center">homebrew-lynxprompt</h1>
+
+<p align="center"><strong>Homebrew tap for LynxPrompt CLI</strong></p>
+
+---
 
 This is the official Homebrew tap for [LynxPrompt](https://lynxprompt.com) CLI.
 
@@ -40,4 +46,3 @@ brew upgrade lynxprompt
 - [LynxPrompt Website](https://lynxprompt.com)
 - [CLI Documentation](https://lynxprompt.com/docs/cli)
 - [GitHub Repository](https://github.com/GeiserX/LynxPrompt)
-

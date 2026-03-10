@@ -19,3 +19,21 @@ class Lynxprompt < Formula
     assert_match "LynxPrompt CLI", shell_output("#{bin}/lynxprompt --help")
   end
 end
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
