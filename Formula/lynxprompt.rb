@@ -4,8 +4,8 @@
 class Lynxprompt < Formula
   desc "CLI for LynxPrompt - Generate AI IDE configuration files"
   homepage "https://lynxprompt.com"
-  url "https://registry.npmjs.org/lynxprompt/-/lynxprompt-2.0.11.tgz"
-  sha256 "4c6d16f848135b42428e995a8908168f22a552bb994335d18373901c0d712d33"
+  url "https://registry.npmjs.org/lynxprompt/-/lynxprompt-2.1.0.tgz"
+  sha256 "b07f9b96b9b1ef08b0c1699a829b9bf2721d85f1d23ae064607b0a2c6c9ac0fe"
   license "SEE LICENSE IN LICENSE"
 
   depends_on "node@22"
@@ -19,21 +19,3 @@ class Lynxprompt < Formula
     assert_match "LynxPrompt CLI", shell_output("#{bin}/lynxprompt --help")
   end
 end
-<<<<<<< Updated upstream
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
