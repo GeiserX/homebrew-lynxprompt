@@ -4,8 +4,8 @@
 class Lynxprompt < Formula
   desc "CLI for LynxPrompt - Generate AI IDE configuration files"
   homepage "https://lynxprompt.com"
-  url "https://registry.npmjs.org/lynxprompt/-/lynxprompt-2.1.8.tgz"
-  sha256 "1e7e13c55cdac640cfaec3e475084cb9bd6fe953bef1ff6afc2e0bc0e363722e"
+  url "https://registry.npmjs.org/lynxprompt/-/lynxprompt-2.1.9.tgz"
+  sha256 "2fffa20983d8a20eac9e0da7a0bba17e9502aa386aca783dd07dc7d75257e939"
   license "SEE LICENSE IN LICENSE"
 
   depends_on "node@22"
