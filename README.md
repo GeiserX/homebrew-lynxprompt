@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/GeiserX/homebrew-lynxprompt/main/docs/images/banner.svg" alt="homebrew-lynxprompt banner" width="900"/></p>
+<p align="center"><img src="docs/images/banner.svg" alt="homebrew-lynxprompt banner" width="900"/></p>
 
 <h1 align="center">homebrew-lynxprompt</h1>
 
