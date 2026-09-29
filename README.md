@@ -1,58 +1,28 @@
-<p align="center"><img src="docs/images/banner.svg" alt="homebrew-lynxprompt banner" width="900"/></p>
+<p align="center"><img src="docs/images/banner.svg" alt="homebrew-lynxprompt" width="900"/></p>
 
 <h1 align="center">homebrew-lynxprompt</h1>
 
-<p align="center"><strong>Homebrew tap for LynxPrompt CLI</strong></p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/lynxprompt"><img src="https://img.shields.io/npm/v/lynxprompt?style=flat-square&logo=npm&label=CLI" alt="CLI version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/GeiserX/homebrew-lynxprompt?style=flat-square" alt="License"></a>
+</p>
 
----
+Homebrew tap for the LynxPrompt CLI, which generates and syncs AI IDE configuration files (`AGENTS.md`, `CLAUDE.md`, `.cursor/rules/`) from a self-hostable platform.
 
-This is the official Homebrew tap for [LynxPrompt](https://lynxprompt.com) CLI.
-
-## Installation
+## Quick start
 
 ```bash
 brew tap GeiserX/lynxprompt
 brew install lynxprompt
+lynxprompt wizard
 ```
 
-## Usage
+`brew upgrade lynxprompt` updates it. Commands and options: [CLI reference](https://lynxprompt.com/docs/cli).
 
-```bash
-# Interactive wizard to generate AI IDE configs
-lynxprompt init
+## Related projects
 
-# Authenticate with LynxPrompt
-lynxprompt login
+[LynxPrompt](https://github.com/GeiserX/LynxPrompt), [lynxprompt-vscode](https://github.com/GeiserX/lynxprompt-vscode), [lynxprompt-action](https://github.com/GeiserX/lynxprompt-action), [lynxprompt-mcp](https://github.com/GeiserX/lynxprompt-mcp).
 
-# List your blueprints
-lynxprompt list
+## License
 
-# Search public blueprints
-lynxprompt search "nextjs typescript"
-
-# Pull a blueprint
-lynxprompt pull bp_abc123
-```
-
-## Updates
-
-```bash
-brew update
-brew upgrade lynxprompt
-```
-
-## More Info
-
-- [LynxPrompt Website](https://lynxprompt.com)
-- [CLI Documentation](https://lynxprompt.com/docs/cli)
-- [GitHub Repository](https://github.com/GeiserX/LynxPrompt)
-
-## Related Projects
-
-| Project | Description |
-|---------|-------------|
-| [LynxPrompt](https://github.com/GeiserX/LynxPrompt) | Self-hosted platform for AI IDE/Tools Rules and Commands via WebUI and CLI |
-| [lynxprompt-vscode](https://github.com/GeiserX/lynxprompt-vscode) | VS Code extension for LynxPrompt AI configuration file management |
-| [lynxprompt-action](https://github.com/GeiserX/lynxprompt-action) | GitHub Action to sync and validate AI IDE configuration files with LynxPrompt |
-| [lynxprompt-mcp](https://github.com/GeiserX/lynxprompt-mcp) | MCP Server for LynxPrompt AI configuration blueprint management |
-| [n8n-nodes-lynxprompt](https://github.com/GeiserX/n8n-nodes-lynxprompt) | n8n community node for LynxPrompt AI configuration blueprints |
+[GPL-3.0-or-later](LICENSE)
