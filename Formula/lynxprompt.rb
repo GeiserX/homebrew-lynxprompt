@@ -6,7 +6,7 @@ class Lynxprompt < Formula
   homepage "https://lynxprompt.geiser.cloud"
   url "https://registry.npmjs.org/lynxprompt/-/lynxprompt-3.2.0.tgz"
   sha256 "7601b6686ff5fffda2b84b1dcc5b2cbdd24044d14dd4333dfa225f6e9b3b73d7"
-  license "SEE LICENSE IN LICENSE"
+  license "AGPL-3.0-or-later"
 
   depends_on "node@22"
 
