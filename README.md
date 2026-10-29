@@ -12,12 +12,11 @@ Homebrew tap for the LynxPrompt CLI, which generates and syncs AI IDE configurat
 ## Quick start
 
 ```bash
-brew tap GeiserX/lynxprompt
-brew install lynxprompt
+brew install GeiserX/lynxprompt/lynxprompt
 lynxprompt wizard
 ```
 
-`brew upgrade lynxprompt` updates it. Commands and options: [CLI reference](https://lynxprompt.geiser.cloud/docs/cli).
+Use the full name. Homebrew 7 refuses `brew tap` followed by a bare `brew install lynxprompt` because the tap is not trusted yet; installing by full name trusts it, so `brew upgrade lynxprompt` works afterwards. Commands and options: [CLI reference](https://lynxprompt.geiser.cloud/docs/cli).
 
 ## Related projects
 
