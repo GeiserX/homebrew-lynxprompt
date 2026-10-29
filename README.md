@@ -17,7 +17,7 @@ brew install lynxprompt
 lynxprompt wizard
 ```
 
-`brew upgrade lynxprompt` updates it. Commands and options: [CLI reference](https://lynxprompt.com/docs/cli).
+`brew upgrade lynxprompt` updates it. Commands and options: [CLI reference](https://lynxprompt.geiser.cloud/docs/cli).
 
 ## Related projects
 
