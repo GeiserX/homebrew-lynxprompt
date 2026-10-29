@@ -22,8 +22,20 @@ jobs:
       # Homebrew/actions has no release tags; pinned to a main commit.
       - uses: Homebrew/actions/setup-homebrew@ae72030040bc05e2d65c41c577092cb98bc0a27e
 
-      # The README route. Nothing is trusted yet: Homebrew 7 accepts only the
-      # full name, and that install trusts the formula for the steps below.
+      # setup-homebrew trusts the tap; a new user's machine does not.
+      - name: Untrust the tap
+        run: |
+          brew untrust GeiserX/lynxprompt
+          [ "$(brew trust --json=v1 | jq '[.taps[], .formulae[]] | length')" = 0 ]
+
+      # The route the README warns against: refused while nothing is trusted.
+      - name: Bare install is refused
+        run: |
+          if brew install lynxprompt 2>err.txt; then echo "::error::bare install was not refused"; exit 1; fi
+          grep -q "untrusted tap" err.txt
+
+      # The README route: Homebrew 7 accepts only the full name, and that
+      # install trusts the formula for the steps below.
       - name: Install by full name
         run: brew install GeiserX/lynxprompt/lynxprompt
 
