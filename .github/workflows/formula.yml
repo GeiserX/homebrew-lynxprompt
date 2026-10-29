@@ -1,0 +1,37 @@
+name: Formula
+on:
+  push:
+    branches: [main]
+    paths: ['Formula/**', '.github/workflows/formula.yml']
+  pull_request:
+    paths: ['Formula/**', '.github/workflows/formula.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # LynxPrompt's publish-cli.yml rewrites Formula/lynxprompt.rb on every
+  # release, so this runs on its push too and catches a bad generator.
+  formula:
+    runs-on: ubuntu-latest
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: '1'
+      HOMEBREW_NO_INSTALL_CLEANUP: '1'
+    steps:
+      # Homebrew/actions has no release tags; pinned to a main commit.
+      - uses: Homebrew/actions/setup-homebrew@ae72030040bc05e2d65c41c577092cb98bc0a27e
+
+      # The README route. Nothing is trusted yet: Homebrew 7 accepts only the
+      # full name, and that install trusts the formula for the steps below.
+      - name: Install by full name
+        run: brew install GeiserX/lynxprompt/lynxprompt
+
+      - name: Upgrade by short name
+        run: brew upgrade lynxprompt
+
+      - name: Test
+        run: brew test GeiserX/lynxprompt/lynxprompt
+
+      - name: Audit
+        run: brew audit --strict --online GeiserX/lynxprompt/lynxprompt

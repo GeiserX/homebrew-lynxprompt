@@ -19,8 +19,7 @@ Standard Homebrew tap with formula definitions in `Formula/`.
 ## Usage
 
 ```bash
-brew tap GeiserX/homebrew-lynxprompt
-brew install lynxprompt
+brew install GeiserX/lynxprompt/lynxprompt
 ```
 
 ---
