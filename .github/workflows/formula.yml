@@ -20,7 +20,7 @@ jobs:
       HOMEBREW_NO_INSTALL_CLEANUP: '1'
     steps:
       # Homebrew/actions has no release tags; pinned to a main commit.
-      - uses: Homebrew/actions/setup-homebrew@ae72030040bc05e2d65c41c577092cb98bc0a27e
+      - uses: Homebrew/actions/setup-homebrew@c262868c096d909fc278daa87ed9772967331ea3
 
       # setup-homebrew trusts the tap; a new user's machine does not.
       - name: Untrust the tap
